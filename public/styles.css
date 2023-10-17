@@ -1,0 +1,161 @@
+/* Adicionando estilos para o corpo da página */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    background-color: #ff9900;
+
+}
+.logo {
+    width: 125px;
+    height: 125px;
+    display: flex;
+}
+/* Estilos para o cabeçalho (header) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ff9900;
+}
+.navibar {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos centralizados e os elementos à direita */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    background-color: #333;
+    color: #fff;
+    padding: 1px 35px;  
+}
+
+/* Estilos para a seção de herói (hero) */
+.topo {
+    text-align: center;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.topo h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.topo p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+.btn:hover {
+    background-color: #ff9900;
+}
+
+/* Estilos para a seção de serviços (services) */
+section div {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    width: 30%;
+    display: inline-block;
+}
+.servicos {
+    text-align: center;
+    padding: 80px 0;
+    display: inline-block;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.servicos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.servicos img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+.servicos p {
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+}
+/* Estilos para a seção "Sobre Nós" (about-us) */
+.sobre {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: flexss;
+    margin: 50px;
+    width: 800px;
+    height: auto;
+}
+.sobre h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.sobre p {
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+}
+
+/* Estilos para a seção de contato (contact) */
+.contato {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: flexss;
+    margin: 50px;
+    width: 800px;
+    height: auto;
+}
+
