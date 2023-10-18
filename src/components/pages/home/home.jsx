@@ -9,8 +9,8 @@ import manuteletrica from '../../../imagens/manuteletrica.png';
 import pedreiro from '../../../imagens/pedreiro.png';
 import carpinteiro from '../../../imagens/carpinteiro.png';
 import pintor from '../../../imagens/pintor.png';
-/*import sobre from '../../imagens/icons/quemsomos.png';
-import contato from '../../imagens/icons/contato.png';*/
+import sobre from '../../imagens/icons/quemsomos.png';
+import contato from '../../imagens/icons/contato.png';
 
 function Home() {
     return (
@@ -27,7 +27,7 @@ function Home() {
 
                 <div className="manuteletrica">
                     <img class="manuteletrica" src={manuteletrica} />       
-                    <h3>Eletricista.</h3>
+                    <h3><strong>Eletricista.</strong></h3>
                     <p>Instalações e manutenções elétricas são serviços essenciais relacionados à infraestrutura elétrica de
                         residências, edifícios comerciais e industriais. Eles abrangem uma série de atividades que visam
                         garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
@@ -35,7 +35,7 @@ function Home() {
 
                 <div className="pedreiro">
                     <img class="pedreiro" src={pedreiro} />   
-                    <h3>Pedreiro / Auxiliar de Pedreiro.</h3>
+                    <h3><strong>Pedreiro / Auxiliar de Pedreiro.</strong></h3>
                     <p>O pedreiro é o profissional da obra que atua na construção das etapas de fundação, paredes e acabamento.
                         Ele deve ter conhecimento sobre o emprego de materiais, sobre ferramentas e equipamentos, sobre as
                         técnicas utilizadas na construção, entre outros.</p>
@@ -43,19 +43,54 @@ function Home() {
 
                 <div className="carpinteiro">
                     <img class="carpinteiro" src={carpinteiro} />   
-                    <h3>Carpinteiro e afins.</h3>
+                    <h3><strong>Carpinteiro e afins.</strong></h3>
                     <p>A carpintaria é voltada para uma produção mais industrial, como a fabricação de peças de madeira para a
                         construção civil.</p>
                 </div>
                 
                 <div className="pintor">
                     <img class="pintor" src={pintor} />   
-                    <h3>Pintor.</h3>
+                    <h3><strong>Pintor.</strong></h3>
                     <p>Realiza pintura em paredes internas e externas. Prepara as superfícies antes de pintá-las, como limpeza,
                         aplicação de massa fina ou corrida e lixamento. Aplica papel de parede e gesso para acabamento.</p>
                 </div>
             </section>
-            
+
+            <section id="cards" class="fim_pagina">
+            <div class="cardsaibamais">
+                <div class="box_img-title">
+                    <img class="pedreiro" src={pedreiro} />
+                </div>
+                <div class="title-saiba">
+                    <h3>Quem somos nós?</h3>
+                </div>
+                <div class="p-saiba">
+                    <p>Bem-vindo ao nosso projeto! Somos um grupo de estudantes universitários dedicados que compartilham uma paixão
+                        pelo empreendedorismo e pela autonomia no mercado de trabalho. Em nossa jornada acadêmica, nos reunimos para
+                        criar um site que representa uma resposta à crescente necessidade de se encontrar trabalho autônomo na
+                        sociedade atual.
+                    </p>
+                </div>
+                <div class="btn-saiba">    
+                    <a href="#" class="btn btn-primary">Saiba mais.</a>
+                </div>
+            </div>
+
+            <div class="cardcontato">
+                <div class="box_img-title">
+                    <img class="pedreiro" src={pedreiro} />
+                </div>
+                <div class="title-saiba">
+                    <h3><strong>Entre em Contato</strong></h3>
+                </div>    
+                <div class="p-saiba">
+                    <p>Estamos à disposição para responder às suas perguntas. Entre em contato conosco.</p>
+                </div>
+                <div class="btn-saiba">
+                    <a href="#" class="btn btn-primary">Contate-nos.</a>
+                </div>
+            </div>
+            </section>
 
             <Rodape />
         </div>
