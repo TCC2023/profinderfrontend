@@ -1,16 +1,15 @@
-.rodape {
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    max-width: 1128px;
-    border-radius: 2rem;
-    width: 98%;
-    background-color: #333;
-  }
-  .rodape p {
+  footer {
     text-align: center;
-    font-size: 1.4rem;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: center;
     margin-top: 0.5rem;
     color: #fff;
-  }
+}
+
   
