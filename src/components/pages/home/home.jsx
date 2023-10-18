@@ -1,9 +1,14 @@
-import React from "react"; 
+import React from "react";
 
-function Home(){
-    return(
+import Cabecalho from "../../header/header";
+import Rodape from "../../footer/footer";
+
+function Home() {
+    return (
         <div>
+            <Cabecalho />
             Home
+            <Rodape />
         </div>
     );
 }
