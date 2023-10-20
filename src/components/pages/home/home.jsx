@@ -83,7 +83,7 @@ function Home() {
                     <p>Estamos à disposição para responder às suas perguntas. Entre em contato conosco.</p>
                 </div>
                 <div class="btn-contato">
-                    <a href="#" class="btn btn-primary">Contate-nos.</a>
+                    <a href="../../pages/contato/contato" class="btn btn-primary">Contate-nos.</a>
                 </div>
             </div>
             </section>
