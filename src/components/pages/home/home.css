@@ -1,0 +1,123 @@
+
+/* Estilos para a seção de contato (contact) */
+.contato {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: flexss;
+    margin: 50px;
+    width: 800px;
+    height: auto;
+}
+/* Estilos para a seção de serviços (services) */
+section div {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    width: 30%;
+    display: inline-block;
+}
+.servicos {
+    text-align: center;
+    padding: 80px 0;
+    display: inline-block;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.servicos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.servicos img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+.servicos p {
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+}
+/**************************/
+.sobre {
+    width: 50px;
+    height: 50px;
+    
+}
+.contato {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.fim_pagina{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilos para a seção de sobre (about) */
+.sobre {
+
+}
+.sobre h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.sobre p {
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+}
+.fim_pagina .cardsobre {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box_img-title {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.title-sobre{
+    padding: 10px;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-sobre {
+    width: 100%;
+    padding: 5px;
+    height: 150px; 
+}
+.btn-sobre {
+    width:100%;
+}
+.sobre-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    width:50%;
+}
+.title-sobre {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
