@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ff9900;
-
 }
 .topo {
     text-align: center;
@@ -15,7 +14,6 @@ body {
     background-position: center;
     color: #fff;
 }
-
 .topo h1 {
     font-size: 48px;
     margin-bottom: 20px;
@@ -27,7 +25,6 @@ body {
     margin-bottom: 30px;
     color: #333
 }
-
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -43,79 +40,7 @@ body {
     background-color: #ff9900;
 }
 
-/* Estilos para a seção de serviços (services) */
-section div {
-    text-align: center;
-    padding: 40px;
-    border-radius: 20px;
-    width: 30%;
-    display: inline-block;
-}
-.servicos {
-    text-align: center;
-    padding: 80px 0;
-    display: inline-block;
-    margin: 0 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-.servicos h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #333;
-}
-.servicos img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    display: inline-block;
-    margin: 10px;
-    width: 200px;
-    height: auto;
-}
-.servicos p {
-    font-size: 16px;
-    color: black;
-    text-align: justify;
-}
-/* Estilos para a seção "Sobre Nós" (about-us) */
-.sobre {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    display: flexss;
-    margin: 50px;
-    width: 800px;
-    height: auto;
-}
-.sobre h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #333;
-}
 
-.sobre p {
-    font-size: 16px;
-    color: black;
-    text-align: justify;
-}
 
-/* Estilos para a seção de contato (contact) */
-.contato {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    display: flexss;
-    margin: 50px;
-    width: 800px;
-    height: auto;
-}
+
 

@@ -52,5 +52,4 @@ function cadUsuario(){
 </div>
     );
 }
-
 export default cadUsuario;

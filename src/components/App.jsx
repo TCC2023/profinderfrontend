@@ -5,6 +5,8 @@ import Home from "./pages/home/home";
 import CadUsuario from "./pages/cadUsuario/cadUsuario"; 
 import Contato from "./pages/contato/contato";
 import Header from "./header/header";
+import Sobre from "./pages/sobre/sobre";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/cadusuario" element={<CadUsuario />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/header" element={<Header />} />
+        <Route path="/sobre" element={<Sobre />} />
       </Routes>
     </BrowserRouter>
   );

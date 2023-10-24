@@ -7,5 +7,4 @@ function Contato(){
         </div>
     );
 }
-
 export default Contato;
