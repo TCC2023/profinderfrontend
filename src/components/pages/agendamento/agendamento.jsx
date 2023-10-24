@@ -7,5 +7,4 @@ function Agendamento(){
         </div>
     );
 }
-
 export default Agendamento;
