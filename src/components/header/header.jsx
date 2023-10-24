@@ -15,16 +15,16 @@ function Cabecalho() {
         </a>
             <div className="centralizar">
                 <ul>
-                    <li><a href="#"><Link to="">Início</Link></a></li>
+                    <li><a href="#"><Link to="/">Início</Link></a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#"><Link to="/contato">Contato</Link></a></li>
                 </ul>
             </div>
             <div className="direita">
                 <ul>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="cadUsuario.html">Cadastrar-se</a></li>
+                    <li><a href="cadUsuario.html"><Link to="/cadusuario">Cadastrar-se</Link></a></li>
                 </ul>
             </div>
         </nav>
