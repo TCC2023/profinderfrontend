@@ -1,9 +1,14 @@
 import React from "react"; 
 
+import Cabecalho from "../../header/header";
+import Rodape from "../../footer/footer";
+
 function Contato(){
     return(
         <div>
+            <Cabecalho />
             Contato
+            <Rodape />
         </div>
     );
 }
