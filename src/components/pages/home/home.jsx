@@ -65,7 +65,7 @@ function Home() {
                             criar um site que representa uma resposta à crescente necessidade de se encontrar trabalho autônomo na
                             sociedade atual.</p>
                         <div className="btnfim">    
-                            <Link to="/quemsomos" className="btn btn-primary">Sobre nós.</Link>
+                            <Link to="/sobre" className="btn btn-primary">Sobre nós.</Link>
                         </div>
                 </div>
 
@@ -74,7 +74,7 @@ function Home() {
                         <h3>Entre em Contato</h3> 
                             <p>Estamos à disposição para responder às suas perguntas. Entre em contato conosco.</p>      
                         <div className="btnfim">
-                            <a href="../../pages/contato/contato" className="btn btn-primary">Contate-nos.</a>
+                            <Link to="/contato" className="btn btn-primary">Contate-nos.</Link>
                         </div>
                 </div>
             </section>
