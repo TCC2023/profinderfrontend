@@ -32,6 +32,7 @@ function Home() {
                     residências, edifícios comerciais e industriais. Eles abrangem uma série de atividades que visam
                     garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
                 </div>
+
                 <div className="pedreiro">
                     <img className="imgservico" src={pedreiro} />   
                     <h3>Pedreiro / Auxiliar de Pedreiro.</h3>
@@ -39,11 +40,13 @@ function Home() {
                     Ele deve ter conhecimento sobre o emprego de materiais, sobre ferramentas e equipamentos, sobre as
                     técnicas utilizadas na construção, entre outros.</p>
                 </div>
+
                 <div className="carpinteiro">
                     <img className="imgservico" src={carpinteiro} />   
                     <h3>Carpinteiro.</h3>
                     <p>A carpintaria é voltada para uma produção mais industrial, como a fabricação de peças de madeira para aconstrução civil.</p>
                 </div>
+                
                 <div className="pintor">
                     <img className="imgservico" src={pintor} />   
                     <h3>Pintor.</h3>
@@ -54,14 +57,13 @@ function Home() {
 
             <section className="fim_pagina">
                 <h2 id="informacoes">Informações:</h2>
-
                 <div className="cardfim">
                     <img className="imgfim" src={sobre} />
                         <h3>Quem somos nós?</h3>
-                        <p>Bem-vindo ao nosso projeto! Somos um grupo de estudantes universitários dedicados que compartilham uma paixão
-                        pelo empreendedorismo e pela autonomia no mercado de trabalho. Em nossa jornada acadêmica, nos reunimos para
-                        criar um site que representa uma resposta à crescente necessidade de se encontrar trabalho autônomo na
-                        sociedade atual.</p>
+                            <p>Bem-vindo ao nosso projeto! Somos um grupo de estudantes universitários dedicados que compartilham uma paixão
+                            pelo empreendedorismo e pela autonomia no mercado de trabalho. Em nossa jornada acadêmica, nos reunimos para
+                            criar um site que representa uma resposta à crescente necessidade de se encontrar trabalho autônomo na
+                            sociedade atual.</p>
                         <div className="btnfim">    
                             <a href="../../pages/sobre/sobre" className="btn btn-primary">Sobre nós.</a>
                         </div>
@@ -70,7 +72,7 @@ function Home() {
                 <div className="cardfim">
                     <img className="imgfim" src={contato} />
                         <h3>Entre em Contato</h3> 
-                        <p>Estamos à disposição para responder às suas perguntas. Entre em contato conosco.</p>      
+                            <p>Estamos à disposição para responder às suas perguntas. Entre em contato conosco.</p>      
                         <div className="btnfim">
                             <a href="../../pages/contato/contato" className="btn btn-primary">Contate-nos.</a>
                         </div>

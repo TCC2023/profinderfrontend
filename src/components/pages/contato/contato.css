@@ -1,0 +1,16 @@
+.contatos {
+    text-align: center;
+    padding: 80px 0;
+    display: inline-block;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contatos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: black;
+}

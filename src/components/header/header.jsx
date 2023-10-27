@@ -24,7 +24,7 @@ function Cabecalho() {
               <li><Link to="/">Início</Link></li>
               <li><Link to="/">Serviços</Link></li>
               <li><Link to="/">Agendamento</Link></li>
-              <li><Link to="/">Informações</Link></li>
+              <li><a href="#informacoes">Informações</a></li>
             </ul>
           </div>
           <div className="direita">
