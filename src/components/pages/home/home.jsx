@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
@@ -65,7 +65,7 @@ function Home() {
                             criar um site que representa uma resposta à crescente necessidade de se encontrar trabalho autônomo na
                             sociedade atual.</p>
                         <div className="btnfim">    
-                            <a href="../../pages/sobre/sobre" className="btn btn-primary">Sobre nós.</a>
+                            <a href="../../pages/sobre/sobre" className="btn btn-primary"><Link to="/quemsomos">Sobre nós.</Link></a>
                         </div>
                 </div>
 

@@ -16,9 +16,9 @@ function Cabecalho() {
     <header>
       <div className="nav-login">
         <nav className="navibar">
-          <a href='index.html'>
+          <Link to="/">
             <img className="logo" src={logo} alt="logo" />
-          </a>
+          </Link>
           <div className="centralizar">
             <ul>
               <li><Link to="/">Início</Link></li>
