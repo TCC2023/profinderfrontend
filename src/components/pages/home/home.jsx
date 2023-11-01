@@ -20,7 +20,7 @@ function Home() {
             <section className="topo_pagina">
                 <h1>Bem-vindo ao ProFinder!</h1>
                 <p>Sua solução confiável para todos os serviços que você precisa.</p>
-                <a href="agendamento.jsx" className="btn btn-primary">Buscar serviços.</a>
+                <Link to="/servicos" className="btn btn-primary">Buscar serviços.</Link>
             </section>
             <section className="servicos">
                 <h2>Nossos Serviços:</h2>

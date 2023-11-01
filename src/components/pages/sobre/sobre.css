@@ -1,54 +1,22 @@
-.sobrenos {
-    margin: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0px 0;
-    margin: 0 20px;
+.sobre {
+    margin: 0 50px;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.sobrenos h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #333;
-}
-.sobrenos img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    display: inline-block;
-    margin: 10px;
-    width: 200px;
-    height: auto;
-}
-.sobrenos p {
-    font-size: 16px;
-    color: black;
-    text-align: justify;
-}
-.quemsomos{
-    width: 50%;
-    padding: 0;
-}
-.contquem {
-    width: 100%;
-    display:flex;
+.sobre h2 {
+    font-size: 30px;
+    padding: 75px;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: black;
 }
-
-.allquem {
-    margin: 30px;
-}
-
-.quemtitle {
-    padding: 30px;
+.sobre_texto {
+    justify-content: center;
+    text-align: justify;
+    padding: 0;
+    
 }
