@@ -1,3 +1,13 @@
+.slider {
+    margin: 1rem auto;
+    width: 98%;
+    max-width: 1440px;
+}
+
+.carousel {
+    text-align: center;
+}
+
 /* Estilos para a seção do topo da página*/
 .topo_pagina {
     text-align: center;
@@ -95,7 +105,7 @@ section div {
     border-radius: 20px;
     display: inline-block;
     margin: 10px;
-    width: 200px;
+    width: 75px;
 }
 .btn {
     display: inline-block;

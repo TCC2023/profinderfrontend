@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
+import { Carousel } from "react-responsive-carousel"
 
 import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
 
 import './home.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import manuteletrica from '../../../imagens/manuteletrica.png';
 import pedreiro from '../../../imagens/pedreiro.png';
@@ -12,6 +14,7 @@ import carpinteiro from '../../../imagens/carpinteiro.png';
 import pintor from '../../../imagens/pintor.png';
 import sobre from '../../../imagens/icons/sobre.png';
 import contato from '../../../imagens/icons/contato.png';
+
 
 function Home() {
     return (
@@ -25,7 +28,7 @@ function Home() {
             <section className="servicos">
                 <h2>Nossos Serviços:</h2>
 
-                <div className="manuteletrica">
+                <div className="trabalho">
                     <img className="imgservico" src={manuteletrica} />       
                     <h3>Eletricista.</h3>
                     <p>Instalações e manutenções elétricas são serviços essenciais relacionados à infraestrutura elétrica de
@@ -33,7 +36,7 @@ function Home() {
                     garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
                 </div>
 
-                <div className="pedreiro">
+                <div className="trabalho">
                     <img className="imgservico" src={pedreiro} />   
                     <h3>Pedreiro / Auxiliar de Pedreiro.</h3>
                     <p>O pedreiro é o profissional da obra que atua na construção das etapas de fundação, paredes e acabamento.
@@ -41,13 +44,13 @@ function Home() {
                     técnicas utilizadas na construção, entre outros.</p>
                 </div>
 
-                <div className="carpinteiro">
+                <div className="trabalho">
                     <img className="imgservico" src={carpinteiro} />   
                     <h3>Carpinteiro.</h3>
                     <p>A carpintaria é voltada para uma produção mais industrial, como a fabricação de peças de madeira para aconstrução civil.</p>
                 </div>
                 
-                <div className="pintor">
+                <div className="trabalho">
                     <img className="imgservico" src={pintor} />   
                     <h3>Pintor.</h3>
                     <p>Realiza pintura em paredes internas e externas. Prepara as superfícies antes de pintá-las, como limpeza,
@@ -81,6 +84,32 @@ function Home() {
             <Rodape />
         </div>
     );
+}
+
+function Slider() {
+    return (
+        <Carousel 
+            className="slider"
+            showThumbs={false}
+            showStatus={false}
+            autoPlay={true}
+            inifiniteLoop={true}
+            interval={5000}
+        >
+            <div>
+                <img src={manuteletrica} alt="eletricista" />
+            </div>
+            <div>
+                <img src={pedreiro} alt="pedreiro" />
+            </div>
+            <div>
+                <img src={carpinteiro} alt="carpinteiro" />
+            </div>
+            <div>
+                <img src={pintor} alt="pintor" />
+            </div>
+        </Carousel>
+    )
 }
 
 export default Home;
