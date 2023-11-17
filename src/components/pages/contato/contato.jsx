@@ -10,7 +10,9 @@ function Contato(){
         <div>
             <Cabecalho />
             <section className="contatos">
+                <div>
                 <h1>Nossos contatos:</h1>
+                </div>
                     <div className="contatoinfo">
                         <div className="tipocontato">
                             <ul>
