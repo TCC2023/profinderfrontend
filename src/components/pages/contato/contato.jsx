@@ -10,7 +10,8 @@ function Contato(){
         <div>
             <Cabecalho />
             <section className="contatos">
-                <div>
+                <div className="contall">
+                <div className="cont-title">
                 <h1>Nossos contatos:</h1>
                 </div>
                     <div className="contatoinfo">
@@ -43,6 +44,7 @@ function Contato(){
                                 <li><Link to="https://www.instagram.com/luthi_gasparetto/">Instagram</Link> | <Link to="https://pt-br.facebook.com/luthi.gasparetto/">Facebook</Link> | <Link to="https://github.com/LuthiGasparetto">GitHub</Link></li>
                             </ul>
                         </div>
+                    </div>
                     </div>
             </section>
             <Rodape />
