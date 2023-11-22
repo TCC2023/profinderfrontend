@@ -8,6 +8,12 @@ import Sobre from "./pages/sobre/sobre";
 import Cabecalho from "./header/header";
 import Rodape from "./footer/footer";
 import Login from "./pages/login/login";
+import Servicos from "./pages/servicos/servicos";
+import Eletricista from "./pages/eletricista/eletricista";
+import Pedreiro from "./pages/pedreiro/pedreiro";
+import Carpinteiro from "./pages/carpinteiro/carpinteiro";
+import Pintor from "./pages/pintor/pintor";
+
 
 function App() {
   return (
@@ -20,6 +26,11 @@ function App() {
         <Route path="/footer" element={<Rodape />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/servicos" element={<Servicos />} />
+        <Route path="/eletricista" element={<Eletricista />} />
+        <Route path="/pedreiro" element={<Pedreiro />} />
+        <Route path="/carpinteiro" element={<Carpinteiro />} />
+        <Route path="/pintor" element={<Pintor />} />
       </Routes>
     </BrowserRouter>
   );

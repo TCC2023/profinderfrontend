@@ -1,5 +1,5 @@
 .contatos {
-    margin: 100px;
+    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +11,9 @@
     padding: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+
 .contatos h1 {
     font-size: 48px;
     margin-bottom: 20px;

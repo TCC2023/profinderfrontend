@@ -22,7 +22,7 @@ function Cabecalho() {
           <div className="centralizar">
             <ul>
               <li><Link to="/">Início</Link></li>
-              <li><Link to="/">Serviços</Link></li>
+              <li><Link to="/servicos">Serviços</Link></li>
               <li><Link to="/">Agendamento</Link></li>
               <li><a href="#informacoes">Informações</a></li>
             </ul>
