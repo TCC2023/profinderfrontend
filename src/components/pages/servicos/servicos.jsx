@@ -16,36 +16,49 @@ function Servicos() {
     <div>
       <Cabecalho />
       <section className="servicos">
-        <h2>Nossos Serviços:</h2>
+                <h2>Nossos Serviços:</h2>
 
-        <div className="trabalho">
-          <Link to="/eletricista" className="linkeletricista">
-            <img className="imgservico" src={manuteletrica} />
-          </Link>
-          <h3>Eletricista.</h3>
-        </div>
+                <div className="trabalho">
+                    <img className="imgservico" src={manuteletrica} alt="eletricista" />       
+                    <h3>Eletricista.</h3>
+                    <p>Instalações e manutenções elétricas são serviços essenciais relacionados à infraestrutura elétrica de
+                    residências, edifícios comerciais e industriais. Eles abrangem uma série de atividades que visam
+                    garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
+                    <div className="btnservico">    
+                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                    </div>
+                </div>
 
-        <div className="trabalho">
-          <Link to="/pedreiro" className="linkpedreiro">
-            <img className="imgservico" src={pedreiro} />
-          </Link>
-          <h3>Pedreiro / Auxiliar de Pedreiro.</h3>
-        </div>
+                <div className="trabalho">
+                    <img className="imgservico" src={pedreiro} alt="pedreiro" />   
+                    <h3>Pedreiro / Auxiliar de Pedreiro.</h3>
+                    <p>O pedreiro é o profissional da obra que atua na construção das etapas de fundação, paredes e acabamento.
+                    Ele deve ter conhecimento sobre o emprego de materiais, sobre ferramentas e equipamentos, sobre as
+                    técnicas utilizadas na construção, entre outros.</p>
+                    <div className="btnservico">    
+                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                    </div>
+                </div>
 
-        <div className="trabalho">
-          <Link to="/carpinteiro" className="linkcarpinteiro">
-            <img className="imgservico" src={carpinteiro} />
-          </Link>
-          <h3>Carpinteiro.</h3>
-        </div>
-
-        <div className="trabalho">
-          <Link to="/pintor" className="linkpintor">
-            <img className="imgservico" src={pintor} />
-          </Link>
-          <h3>Pintor.</h3>
-        </div>
-      </section>
+                <div className="trabalho">
+                    <img className="imgservico" src={carpinteiro} alt="carpinteiro" />   
+                    <h3>Carpinteiro.</h3>
+                    <p>A carpintaria é voltada para uma produção mais industrial, como a fabricação de peças de madeira para aconstrução civil.</p>
+                    <div className="btnservico">    
+                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                    </div>
+                </div>
+                
+                <div className="trabalho">
+                    <img className="imgservico" src={pintor} alt="pintor" />   
+                    <h3>Pintor.</h3>
+                    <p>Realiza pintura em paredes internas e externas. Prepara as superfícies antes de pintá-las, como limpeza,
+                    aplicação de massa fina ou corrida e lixamento. Aplica papel de parede e gesso para acabamento.</p>
+                    <div className="btnservico">    
+                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                    </div>
+                </div>
+            </section>
       <Rodape />
     </div>
   );

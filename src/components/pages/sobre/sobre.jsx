@@ -4,6 +4,7 @@ import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
 
 import "./sobre.css";
+import Icone from "../../../imagens/icons/logo.png";
 
 function Sobre() {
   return (
@@ -53,6 +54,11 @@ function Sobre() {
               nossa equipe e se juntar a nós nessa empolgante jornada. Estamos
               construindo não apenas um site, mas também uma comunidade baseada
               em confiança e oportunidades.
+              <br></br>
+              <br></br>
+              <div className = "icone">
+                <img className="icone" src={Icone} />
+              </div>
             </p>
           </div>
         </div>
