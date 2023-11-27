@@ -35,7 +35,7 @@ section div {
     width: 30%;
     display: inline-block;
 }
-.servicos {
+.content {
     text-align: center;
     padding: 80px 0;
     display: inline-block;
@@ -45,24 +45,24 @@ section div {
     padding: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.servicos h2 {
-    font-size: 30px;
+.content h2 {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 40px;
     color: black;
 }
-.servicos h3 {
+.content h3 {
     font-size: 19px;
     font-weight: bold;
     margin-bottom: 40px;
     color: black;
 }
-.servicos p {
+.content p {
     font-size: 16px;
     color: black;
     text-align: justify;
 }
-.servicos img {
+.content img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;

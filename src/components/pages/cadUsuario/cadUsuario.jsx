@@ -33,7 +33,7 @@ function cadUsuario() {
       <div className="div-cadusu">
         <div className="container">
           <div className="titulo-cad">
-            <h1>Cadastro de Usuário</h1>
+            <h1>Cadastro</h1>
             <br></br>
           </div>
           <form id="cadastro-form" action="#" method="post">

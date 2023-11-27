@@ -8,13 +8,9 @@ import Rodape from "../../footer/footer";
 import './home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import manuteletrica from '../../../imagens/manuteletrica.png';
-import pedreiro from '../../../imagens/pedreiro.png';
-import carpinteiro from '../../../imagens/carpinteiro.png';
-import pintor from '../../../imagens/pintor.png';
+import ferramentas from '../../../imagens/ferramentas.png';
 import sobre from '../../../imagens/icons/sobre.png';
 import contato from '../../../imagens/icons/contato.png';
-
 
 function Home() {
     return (
@@ -23,39 +19,20 @@ function Home() {
             <section className="topo_pagina">
                 <h1>Bem-vindo ao ProFinder!</h1>
                 <p>Sua solução confiável para todos os serviços que você precisa.</p>
-                <Link to="/servicos" className="btn btn-primary">Buscar serviços.</Link>
+
             </section>
-            <section className="servicos">
-                <h2>Nossos Serviços:</h2>
+            <section className="content">
+                <h2>Contrate um serviço sem sair da sua casa!</h2>
 
-                <div className="trabalho">
-                    <img className="imgservico" src={manuteletrica} />       
-                    <h3>Eletricista.</h3>
-                    <p>Instalações e manutenções elétricas são serviços essenciais relacionados à infraestrutura elétrica de
-                    residências, edifícios comerciais e industriais. Eles abrangem uma série de atividades que visam
-                    garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
-                </div>
-
-                <div className="trabalho">
-                    <img className="imgservico" src={pedreiro} />   
-                    <h3>Pedreiro / Auxiliar de Pedreiro.</h3>
-                    <p>O pedreiro é o profissional da obra que atua na construção das etapas de fundação, paredes e acabamento.
-                    Ele deve ter conhecimento sobre o emprego de materiais, sobre ferramentas e equipamentos, sobre as
-                    técnicas utilizadas na construção, entre outros.</p>
+                <div className="home-contratar">
+                    <img className="imgcontratar" src={ferramentas} alt="contratar" />       
+                    <h3>Alterar</h3>
+                    <p>ALTERAR ESSE TEXTO UASHAUSHAUSHDOASDHASÇDHASÇLHSADKLSJADH A IDEIA É COLOCAR A IMAGEM ACIMA AO LADO DO TEXTO E O BOTÃO EMBAIXO DO TEXTO, ACHAR UMA IMAGEM QUE DEFINA MELHOR ESSA PARTE</p>
+                    <div className="btnservico">    
+                    <Link to="/servicos" className="btn btn-primary">Buscar serviços.</Link>
+                    </div>
                 </div>
 
-                <div className="trabalho">
-                    <img className="imgservico" src={carpinteiro} />   
-                    <h3>Carpinteiro.</h3>
-                    <p>A carpintaria é voltada para uma produção mais industrial, como a fabricação de peças de madeira para aconstrução civil.</p>
-                </div>
-                
-                <div className="trabalho">
-                    <img className="imgservico" src={pintor} />   
-                    <h3>Pintor.</h3>
-                    <p>Realiza pintura em paredes internas e externas. Prepara as superfícies antes de pintá-las, como limpeza,
-                    aplicação de massa fina ou corrida e lixamento. Aplica papel de parede e gesso para acabamento.</p>
-                </div>
             </section>
 
             <section className="fim_pagina">
@@ -86,7 +63,7 @@ function Home() {
     );
 }
 
-function Slider() {
+/*function Slider() {
     return (
         <Carousel 
             className="slider"
@@ -110,6 +87,6 @@ function Slider() {
             </div>
         </Carousel>
     )
-}
+}*/
 
 export default Home;
