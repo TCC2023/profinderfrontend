@@ -1,4 +1,5 @@
-import React from "react"; 
+import React, { useState, useEffect } from "react";
+import api from "../../services/api";
 import { Link } from "react-router-dom";
 import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
@@ -6,22 +7,47 @@ import Rodape from "../../footer/footer";
 import './pintor.css';
 
 function Pintor(){
+
+    const [servicos, setServicos] = useState([]);
+
+    const getPrestadores = async () => {
+      try {
+        const response = await api.get("/prestadores");
+        const data = response.data.itens;
+  
+        setServicos(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+  
+    useEffect(() => {
+      getPrestadores();
+    }, []);
+
     return(
         <div>
             <Cabecalho />
             <section className="pintor">
                 <div className="title-pintor">
-                    <h1>Eletricista</h1>
+                    <h1>Pintor</h1>
                 </div>
 
                 <div className="pintor-info">
-                    <p>Instalações e manutenções elétricas são serviços essenciais relacionados à infraestrutura elétrica de residências, edifícios comerciais e industriais. Eles abrangem uma série de atividades que visam garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
+                    <p>Realiza pintura em paredes internas e externas. Prepara as superfícies antes de pintá-las, como limpeza,
+                    aplicação de massa fina ou corrida e lixamento. Aplica papel de parede e gesso para acabamento</p>
                 </div>
                 
                 <div className="listagem-servico">
-
-                </div>
-
+          <ul className="lista-prestador">
+            {servicos.map((item) => (
+              <div className="prestador-listado" key={item.usuarioId}>
+                <span className="Item">id: {item.usuarioId}</span>
+                <span className="name">id: {item.prestadorEmpresa}</span>
+              </div>
+            ))}
+          </ul>
+        </div>
             </section>
             <Rodape />
         </div>

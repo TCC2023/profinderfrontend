@@ -1,31 +1,60 @@
-import React from "react"; 
+import React, { useState, useEffect } from "react";
+import api from "../../services/api";
 import { Link } from "react-router-dom";
 import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
 
-import './pedreiro.css';
+import "./pedreiro.css";
 
-function Pedreiro(){
-    return(
-        <div>
-            <Cabecalho />
-            <section className="pedreiro">
-                <div className="title-pedreiro">
-                    <h1>Eletricista</h1>
-                </div>
+function Pedreiro() {
+  const [servicos, setServicos] = useState([]);
 
-                <div className="pedreiro-info">
-                    <p>Instalações e manutenções elétricas são serviços essenciais relacionados à infraestrutura elétrica de residências, edifícios comerciais e industriais. Eles abrangem uma série de atividades que visam garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
-                </div>
-                
-                <div className="listagem-servico">
+  const getPrestadores = async () => {
+    try {
+      const response = await api.get("/prestadores");
+      const data = response.data.itens;
 
-                </div>
+      setServicos(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-            </section>
-            <Rodape />
+  useEffect(() => {
+    getPrestadores();
+  }, []);
+
+  return (
+    <div>
+      <Cabecalho />
+      <section className="pedreiro">
+        <div className="title-pedreiro">
+          <h1>Pedreiro</h1>
         </div>
-    );
+
+        <div className="pedreiro-info">
+          <p>
+            O pedreiro é o profissional da obra que atua na construção das
+            etapas de fundação, paredes e acabamento. Ele deve ter conhecimento
+            sobre o emprego de materiais, sobre ferramentas e equipamentos,
+            sobre as técnicas utilizadas na construção, entre outros..
+          </p>
+        </div>
+
+        <div className="listagem-servico">
+          <ul className="lista-prestador">
+            {servicos.map((item) => (
+              <div className="prestador-listado" key={item.usuarioId}>
+                <span className="Item">id: {item.usuarioId}</span>
+                <span className="name">id: {item.prestadorEmpresa}</span>
+              </div>
+            ))}
+          </ul>
+        </div>
+      </section>
+      <Rodape />
+    </div>
+  );
 }
 
 export default Pedreiro;

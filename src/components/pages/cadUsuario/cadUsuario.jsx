@@ -6,6 +6,26 @@ import Rodape from "../../footer/footer";
 import "./cadUsuario.css";
 
 function cadUsuario() {
+
+    const [cadastro, setCadastro] = useState([]);
+
+    const postCadastro = async () => {
+        txt_nome,
+        txt_email,
+        txt_senha,
+        txt_tipo_usuario,
+        txt_celular,
+        txt_data_nasc
+    };
+
+  try {
+    const response = await api.post("/cadastro", postCadastro);
+    alert("Id do texto: " + response.data);
+  } catch (error) {
+    alert("Erro ao cadastrar usuário, tente novamente!" + "\n" + error);
+  }
+
+
   return (
 
     <div>
