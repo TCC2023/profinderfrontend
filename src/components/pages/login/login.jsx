@@ -18,12 +18,12 @@ function Login() {
 
           <form id="login" action="#" method="post">
             <div className="login-email">
-              <label for="email">Email:</label>
+              <label htmlFor="email">E-mail:</label>
               <input type="email" id="email" name="email" required />
             </div>
 
             <div className="login-senha">
-              <label for="senha">Senha:</label>
+              <label htmlFor="senha">Senha:</label>
               <input type="password" id="senha" name="senha" required />
             </div>
 

@@ -1,0 +1,35 @@
+.cardServ {
+    width: 30%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.4rem solid #ff9900;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: #ff9900;
+    margin: 1rem 1rem;
+}
+.cardServ .controlImgServ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    padding-bottom: 0.4rem;
+}
+.cardServ .controlImgServ img {
+    max-width: 100%;
+    width: auto;
+}
+.cardServ span {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+.cardServ .descricao {
+    font-weight: bold;
+}
