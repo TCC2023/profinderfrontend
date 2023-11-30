@@ -42,8 +42,7 @@ function Pintor(){
           <ul className="lista-prestador">
             {servicos.map((item) => (
               <div className="prestador-listado" key={item.usuarioId}>
-                <span className="Item">id: {item.usuarioId}</span>
-                <span className="name">id: {item.prestadorEmpresa}</span>
+                <span className="name"> {item.prestadorEmpresa}</span>
               </div>
             ))}
           </ul>

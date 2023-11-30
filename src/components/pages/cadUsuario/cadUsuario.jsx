@@ -1,35 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import api from '../../services/api'
 
 import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
 
 import "./cadUsuario.css";
 
-function cadUsuario() {
+function useCadUsuario() {
 
-    const [cadastro, setCadastro] = useState([]);
+  const [cad, setCadastro] = useState({
 
-    const postCadastro = async () => {
-        txt_nome,
-        txt_email,
-        txt_senha,
-        txt_tipo_usuario,
-        txt_celular,
-        txt_data_nasc
-    };
+  });
+  const [nome, setNome] = useState('')
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [tipo, setTipo] = useState('')
+  const [celular, setCelular] = useState('')
+  const [data, setData] = useState('')
 
-  try {
-    const response = await api.post("/cadastro", postCadastro);
-    alert("Id do texto: " + response.data);
-  } catch (error) {
-    alert("Erro ao cadastrar usuário, tente novamente!" + "\n" + error);
+
+  const handleSubmit = async (e) => {
+    try {
+      if (tipo == 0) {
+        alert("Selecione uma das opções");
+      } else {
+        const cadastro = {
+          "usuarioNome": nome,
+          "usuarioEmail": email,
+          "usuarioSenha": senha,
+          "usuarioTelefone": celular,
+          "usuarioDataNasc": data,
+          "usuarioTipoConta": tipo
+        }
+        const response = await api.post('/usuarios', cadastro);
+        alert("id do texto: " + response.data);
+        console.log(response);
+
+      }
+
+    } catch (error) {
+      console.log(error);
+      alert('Erro ao cadastrar usuario, tente novamente!' + "\n" + error);
+    }
   }
-
 
   return (
 
     <div>
-        <Cabecalho />
+      <Cabecalho />
       <div className="div-cadusu">
         <div className="container">
           <div className="titulo-cad">
@@ -39,24 +57,30 @@ function cadUsuario() {
           <form id="cadastro-form" action="#" method="post">
             <div className="form-nome">
               <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required />
+              <input type="text" id="nome" name="nome" required onChange={(e) => { setNome(e.target.value); console.log(nome); }} />
             </div>
 
             <div className=" form-email">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" required onChange={(e) => { setEmail(e.target.value); }} />
             </div>
 
             <div className="form-senha">
               <label for="senha">Senha:</label>
-              <input type="password" id="senha" name="senha" required />
+              <input type="password" id="senha" name="senha" required onChange={(e) => { setSenha(e.target.value); }} />
             </div>
 
             <div className="form-usu">
-              <label for="tipo_usuario">Tipo de Usuário:</label>
-              <select className="form-select" id="tipo_usuario" name="tipo-usuario">
-                <option value="cliente">Cliente</option>
-                <option value="prestador">Prestador de Serviços</option>
+              <label htmlFor="tipo_usuario">Tipo de Usuário:</label>
+              <select
+                className="form-select"
+                id="tipo_usuario"
+                name="tipo_usuario"
+                onChange={(e) => { setTipo(e.target.value); }}
+              >
+                <option value="0">Selecione uma opção</option>
+                <option value="Cliente">Cliente</option>
+                <option value="Prestador">Prestador de Serviços</option>
               </select>
             </div>
 
@@ -71,16 +95,16 @@ function cadUsuario() {
                 placeholder="Celular"
                 required="required"
                 pattern="^[0-9]{11}$"
-              />
+                onChange={(e) => { setCelular(e.target.value); }} />
             </div>
 
             <div className="form-data">
               <label for="data_nasc">Data de Nascimento</label>
-              <input type="date" id="data" name="data" lang="pt-BR" required />
+              <input type="date" id="data" name="data" lang="pt-BR" required onChange={(e) => { setData(e.target.value); }} />
             </div>
 
             <div className="btn-cadusu">
-              <button type="submit">Cadastrar</button>
+              <button type="button" onClick={() => handleSubmit()}>Cadastrar</button>
             </div>
           </form>
         </div>
@@ -89,4 +113,4 @@ function cadUsuario() {
     </div>
   );
 }
-export default cadUsuario;
+export default useCadUsuario;

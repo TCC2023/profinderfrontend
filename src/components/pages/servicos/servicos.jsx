@@ -26,7 +26,7 @@ function Servicos() {
                     garantir o funcionamento seguro e eficiente dos sistemas elétricos.</p>
                     
                     <div className="btnservico">    
-                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                      <Link to="/eletricista" className="btn btn-primary">Contratar Serviço!</Link>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ function Servicos() {
                     Ele deve ter conhecimento sobre o emprego de materiais, sobre ferramentas e equipamentos, sobre as
                     técnicas utilizadas na construção, entre outros.</p>
                     <div className="btnservico">    
-                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                      <Link to="/pedreiro" className="btn btn-primary">Contratar Serviço!</Link>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ function Servicos() {
                     <h3>Carpinteiro.</h3>
                     <p>A carpintaria é voltada para uma produção mais industrial, como a fabricação de peças de madeira para aconstrução civil.</p>
                     <div className="btnservico">    
-                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                      <Link to="/carpinteiro" className="btn btn-primary">Contratar Serviço!</Link>
                     </div>
                 </div>
                 
@@ -56,7 +56,7 @@ function Servicos() {
                     <p>Realiza pintura em paredes internas e externas. Prepara as superfícies antes de pintá-las, como limpeza,
                     aplicação de massa fina ou corrida e lixamento. Aplica papel de parede e gesso para acabamento.</p>
                     <div className="btnservico">    
-                      <Link to="/agendamento" className="btn btn-primary">Contratar Serviço!</Link>
+                      <Link to="/pintor" className="btn btn-primary">Contratar Serviço!</Link>
                     </div>
                 </div>
             </section>
