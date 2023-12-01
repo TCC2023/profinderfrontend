@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import api from "../../services/api";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 
 import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
 
 import "./login.css";
 
-function Login() {
+function Login() { 
+  let navigate = useNavigate(); 
 
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
@@ -15,19 +16,29 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try { 
+    try {
 
       const dados = {
-        usuarioEmail: email, 
+        usuarioEmail: email,
         usuarioSenha: senha
       }
 
       const response = await api.post("/login", dados);
-      console.log(response);
+      // console.log(response);
 
       // Lógica para tratamento de sucesso
-      console.log("Login bem-sucedido", response.data); 
-      
+      // console.log("Login bem-sucedido", response.data); 
+      const objLogado = {
+        "id": response.data.itens[0].usuarioId,
+        "nome": response.data.itens[0].usuarioNome,
+        "acesso": response.data.itens[0].usuarioTipoConta
+      };
+      // signin(JSON.stringify(objLogado));                
+      localStorage.clear();
+      localStorage.setItem('user', JSON.stringify(objLogado));
+      // window.location.reload(true); 
+      console.log(objLogado);
+      navigate('/perfil');
 
       // Redirecionar para a página desejada após o login
     } catch (error) {

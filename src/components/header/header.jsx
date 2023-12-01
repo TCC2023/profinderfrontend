@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 /*import Home from "../../pages/home/home";
 import Servicos from "../../pages/servicos/servicos";
@@ -12,6 +12,28 @@ import './header.css';
 import logo from '../../imagens/icons/logo.png';
 
 function Cabecalho() {
+
+  let navigate = useNavigate();
+  const [logado, setLogado] = useState(false);
+  const [usuario, setUsuario] = useState(false);
+
+  function sair() {
+    localStorage.clear();
+    // window.location.reload(true);
+    // setLogado(false);
+    navigate('/');
+  }
+
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user) {
+      setLogado(true);
+      setUsuario(user.nome);
+      // console.log(user);
+    } 
+  }, []);
+  // console.log(logado);
+
   return (
     <header>
       <div className="nav-login">
@@ -28,9 +50,11 @@ function Cabecalho() {
             </ul>
           </div>
           <div className="direita">
-            <ul>
-              <li><Link to="/login">Login</Link></li>
-              <li><Link to="/cadUsuario">Cadastrar-se</Link></li>
+            <ul>              
+              <li> {logado ? <span className='menuSair' onClick={() => navigate('/perfil')}>{usuario}</span> : <Link to="/login">{logado ? 'Sair' : 'Login'}</Link>}</li>
+              <li> {logado ? <span className='menuSair' onClick={() => sair()}>Sair</span> : <Link to="/cadUsuario">Cadastrar-se</Link>}</li>
+              {/* <li> {logado ? <span className='menuSair' onClick={() => navigate('/perfil')}>{usuario}</span> : <Link to="/cadUsuario">Cadastrar-se</Link>}</li> */}
+              {/* <li><Link to="/cadUsuario">Cadastrar-se</Link></li> */}
             </ul>
           </div>
         </nav>
