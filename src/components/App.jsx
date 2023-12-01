@@ -13,6 +13,7 @@ import Eletricista from "./pages/eletricista/eletricista"
 import Pedreiro from "./pages/pedreiro/pedreiro"
 import Carpinteiro from "./pages/carpinteiro/carpinteiro"
 import Pintor from "./pages/pintor/pintor"
+import Perfil from "./pages/perfil/perfil"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/pedreiro" element={<Pedreiro />} />
         <Route path="/carpinteiro" element={<Carpinteiro />} />
         <Route path="/pintor" element={<Pintor />} />
+        <Route path="/perfil" element={<Perfil />} />
 
       </Routes>
     </BrowserRouter>
