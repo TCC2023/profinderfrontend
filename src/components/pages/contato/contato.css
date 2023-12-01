@@ -1,11 +1,5 @@
 .contatos {
-    margin: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0px 0;
-    margin: 0 20px;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -19,13 +13,12 @@
 }
 .contatos h2 {
     font-size: 30px;
-
     font-weight: bold;
     margin-bottom: 20px;
     color: black;
 }
 .contall {
-    width: 100%;
+    width: 80%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -33,11 +26,8 @@
     width: 100%;
 }
 .contatoinfo {
-    display: flex;
-    justify-content: center;
-
-    flex-direction: row;
-
+    flex-direction: 'row';
+    justify-content: 'space-between';
 }
 .tipocontato {
     padding: 0px 270px 0px 0px;

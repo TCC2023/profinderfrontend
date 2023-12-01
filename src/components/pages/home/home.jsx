@@ -8,9 +8,9 @@ import Rodape from "../../footer/footer";
 import './home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import ferramentas from '../../../imagens/ferramentas.png';
 import sobre from '../../../imagens/icons/sobre.png';
 import contato from '../../../imagens/icons/contato.png';
+import logo from '../../../imagens/icons/logo.png';
 
 function Home() {
     return (
@@ -23,11 +23,9 @@ function Home() {
             </section>
             <section className="content">
                 <h2>Contrate um serviço sem sair da sua casa!</h2>
-
-                <div className="home-contratar">
-                    <img className="imgcontratar" src={ferramentas} alt="contratar" />       
-                    <h3>Alterar</h3>
-                    <p>ALTERAR ESSE TEXTO UASHAUSHAUSHDOASDHASÇDHASÇLHSADKLSJADH A IDEIA É COLOCAR A IMAGEM ACIMA AO LADO DO TEXTO E O BOTÃO EMBAIXO DO TEXTO, ACHAR UMA IMAGEM QUE DEFINA MELHOR ESSA PARTE</p>
+                <div className="home-contratar">    
+                    <img className="imgcontent" src={logo} />
+                    <p>Somos uma plataforma simples que conecta clientes a prestadores de serviço qualificados. Na homepage, você encontrará uma pesquisa fácil para encontrar profissionais. Explore perfis e solicite orçamentos diretamente. Nosso foco é na eficiência e simplicidade, proporcionando uma experiência direta e sem complicações.</p>
                     <div className="btnservico">    
                     <Link to="/servicos" className="btn btn-primary">Buscar serviços.</Link>
                     </div>

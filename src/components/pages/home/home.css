@@ -20,10 +20,11 @@
     font-size: 48px;
     margin-bottom: 20px;
     color: #fff;
+    font-weight: bold;
 }
 .topo_pagina p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     color: #333
 }
 /* Estilos para a seção de serviços*/
@@ -37,24 +38,19 @@ section div {
 }
 .content {
     text-align: center;
+    justify-content: center;
     padding: 80px 0;
-    display: inline-block;
-    margin: 0 20px;
+    margin: 100px;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .content h2 {
+    margin: 40px;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 40px;
-    color: black;
-}
-.content h3 {
-    font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     color: black;
 }
 .content p {
@@ -64,13 +60,11 @@ section div {
 }
 .content img {
     max-width: 100%;
-    height: auto;
+    height: 300px;
     margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     display: inline-block;
     margin: 10px;
-    width: 200px;
 }
 /* Estilos para a seção "Sobre Nós" e "Contato" */
 .fim_pagina {
