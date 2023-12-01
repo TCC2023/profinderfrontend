@@ -23,7 +23,6 @@ function Cabecalho() {
             <ul>
               <li><Link to="/">Início</Link></li>
               <li><Link to="/servicos">Serviços</Link></li>
-              <li><Link to="/agendamento">Agendamento</Link></li>
               <li><a href="#informacoes">Informações</a></li>
             </ul>
           </div>

@@ -9,7 +9,6 @@ import Cabecalho from "./header/header";
 import Rodape from "./footer/footer";
 import Login from "./pages/login/login";
 import Servicos from "./pages/servicos/servicos";
-import Agendamento from "./pages/agendamento/agendamento";
 import Eletricista from "./pages/eletricista/eletricista"
 import Pedreiro from "./pages/pedreiro/pedreiro"
 import Carpinteiro from "./pages/carpinteiro/carpinteiro"
@@ -27,7 +26,6 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/login" element={<Login />} />
         <Route path="/servicos" element={<Servicos />} />
-        <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/eletricista" element={<Eletricista />} />
         <Route path="/pedreiro" element={<Pedreiro />} />
         <Route path="/carpinteiro" element={<Carpinteiro />} />
