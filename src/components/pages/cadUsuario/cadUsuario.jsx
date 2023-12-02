@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from '../../services/api'
+import { Link, useNavigate } from 'react-router-dom';
 
 import Cabecalho from "../../header/header";
 import Rodape from "../../footer/footer";
@@ -7,7 +8,7 @@ import Rodape from "../../footer/footer";
 import "./cadUsuario.css";
 
 function useCadUsuario() {
-
+  let navigate = useNavigate(); 
   const [cad, setCadastro] = useState({
 
   });
@@ -33,14 +34,14 @@ function useCadUsuario() {
           "usuarioTipoConta": tipo
         }
         const response = await api.post('/usuarios', cadastro);
-        alert("id do texto: " + response.data);
+        alert("id do usuário: " + response.data.usuarioId);
         console.log(response);
-
+        navigate('/login');
       }
 
     } catch (error) {
       console.log(error);
-      alert('Erro ao cadastrar usuario, tente novamente!' + "\n" + error);
+      alert('Erro ao cadastrar usuário, tente novamente!' + "\n" + error);
     }
   }
 

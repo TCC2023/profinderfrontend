@@ -1,15 +1,20 @@
 import React from 'react';
 
-import './cardServicos.css';
+import './servicos.css';
 
-function CardServicos({ tbServicos }) {
+function CardServicos({ srv, srvLink }) {
     return (
-        <div className='cardServ'>
-            <div className='controlImgServ'>
-            </div>
-            <span className='descricao'>{tbServicos.servicoDesc}</span>
-            <span>{tbServicos.servicoValor}</span>
+        <div className="trabalho">
+          <img className="imgservico" src={srv.tipoServImg} alt={srv.tipoServNome} />
+          <h3>{srv.tipoServNome}</h3>
+          <p>{srv.tipoServDescricao}</p>
+
+          <div className="btnservico">
+            {/* <Link onClick={() => direcionamento('eletricista')} className="btn btn-primary">Contratar Serviço!</Link> */}
+            <span onClick={() => srvLink(srv.tipoServNome.toLowerCase(), srv.tipoServId)} className="btn btn-primary">Contratar Serviço!</span>
+          </div>
         </div>
+
     );
 }
 

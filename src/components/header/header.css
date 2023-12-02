@@ -34,6 +34,16 @@ nav a {
 nav a:hover {
   color: #ff9900;
 }
+nav span {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+nav span:hover {
+  color: #ff9900;
+}
 nav ul {
     list-style-type: none;
     text-align: center;

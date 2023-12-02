@@ -52,8 +52,6 @@ function Cabecalho() {
             <ul>              
               <li> {logado ? <span className='menuSair' onClick={() => navigate('/perfil')}>{usuario}</span> : <Link to="/login">{logado ? 'Sair' : 'Login'}</Link>}</li>
               <li> {logado ? <span className='menuSair' onClick={() => sair()}>Sair</span> : <Link to="/cadUsuario">Cadastrar-se</Link>}</li>
-              {/* <li> {logado ? <span className='menuSair' onClick={() => navigate('/perfil')}>{usuario}</span> : <Link to="/cadUsuario">Cadastrar-se</Link>}</li> */}
-              {/* <li><Link to="/cadUsuario">Cadastrar-se</Link></li> */}
             </ul>
           </div>
         </nav>
