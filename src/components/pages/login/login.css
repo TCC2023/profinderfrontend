@@ -1,6 +1,6 @@
 .div-login {
     width: 100%;
-    margin-top: 80px;
+    margin: 80px 0px 175px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,8 +55,8 @@ a{
     color:#333;
 }
 .titulo-login {
-    margin: 77px;
-    font-size: 55px;
+    margin: 30px;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
 }

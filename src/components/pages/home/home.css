@@ -115,3 +115,9 @@ section div {
 .btn:hover {
     background-color: #ff9900;
 }
+
+.home-contratar {
+    width: 50%;
+    line-height: 23px;
+    padding: 10px 0px 10px 0px;
+}

@@ -8,8 +8,11 @@ import Rodape from "../../footer/footer";
 import "./login.css";
 
 function Login() { 
+  // Importa a função useNavigate do React Router para realizar a navegação entre páginas
   let navigate = useNavigate(); 
 
+
+   // Define dois estados, um para o email e outro para a senha, utilizando a função useState do React
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
 
@@ -23,21 +26,29 @@ function Login() {
         usuarioSenha: senha
       }
 
+      // Faz uma requisição assíncrona para a API utilizando o método POST para o endpoint "/login"
       const response = await api.post("/login", dados);
       // console.log(response);
 
       // Lógica para tratamento de sucesso
-      // console.log("Login bem-sucedido", response.data); 
+    
+
+      // Cria um objeto com informações do usuário a serem armazenadas localmente
       const objLogado = {
         "id": response.data.itens[0].usuarioId,
         "nome": response.data.itens[0].usuarioNome,
         "acesso": response.data.itens[0].usuarioTipoConta
       };
-      // signin(JSON.stringify(objLogado));                
+
+      // signin(JSON.stringify(objLogado));  
+
+      // Limpa o armazenamento local e salva as informações do usuário logado              
       localStorage.clear();
       localStorage.setItem('user', JSON.stringify(objLogado));
+
       // window.location.reload(true); 
       console.log(objLogado);
+      // Navega para a página "/perfil" após o login bem-sucedido
       navigate('/perfil');
 
       // Redirecionar para a página desejada após o login

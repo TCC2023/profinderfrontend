@@ -25,7 +25,13 @@ function Home() {
                 <h2>Contrate um serviço sem sair da sua casa!</h2>
                 <div className="home-contratar">    
                     <img className="imgcontent" src={logo} />
-                    <p>Somos uma plataforma simples que conecta clientes a prestadores de serviço qualificados. Na homepage, você encontrará uma pesquisa fácil para encontrar profissionais. Explore perfis e solicite orçamentos diretamente. Nosso foco é na eficiência e simplicidade, proporcionando uma experiência direta e sem complicações.</p>
+                    <p>Somos uma plataforma simples que conecta clientes a prestadores de serviço qualificados. 
+                    <br></br>
+                    Na homepage, você encontrará uma pesquisa fácil para encontrar profissionais. 
+                    <br></br>
+                    Explore perfis e solicite orçamentos diretamente.
+                    <br></br>
+                    Nosso foco é na eficiência e simplicidade, proporcionando uma experiência direta e sem complicações.</p>
                     <div className="btnservico">    
                     <Link to="/servicos" className="btn btn-primary">Buscar serviços.</Link>
                     </div>

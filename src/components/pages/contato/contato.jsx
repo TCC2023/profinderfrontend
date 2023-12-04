@@ -31,6 +31,7 @@ function Contato(){
                                 <li><Link to="mailto:luthi_gasparetto@hotmail.com">luthi_gasparetto@hotmail.com</Link></li>
                             </ul>
                         </div>
+                        <br></br>
                         <div className="tipocontato">
                             <ul>
                                 <h2>Outras Redes:</h2>
